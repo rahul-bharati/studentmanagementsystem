@@ -1,0 +1,76 @@
+@media (max-width: 720px) {
+  .unsupported {
+    display: block;
+    height: 100%;
+    width: 100vw;
+    padding: 50% 10%; }
+    .unsupported h1 {
+      font-size: 5vw; }
+  .supported {
+    display: none; } }
+
+@media (min-width: 720px) {
+  body {
+    background-color: #121212; }
+  .unsupported {
+    display: none; }
+  .supported {
+    display: block; }
+  .header {
+    background-color: #232323;
+    text-shadow: 0 0 2px #ddd;
+    box-shadow: 0 5px 15px #111111; }
+  .main {
+    margin-top: 4.5rem; }
+  .navigation-pane {
+    height: 100vh;
+    width: 25vw;
+    background-color: #1C1C1C;
+    position: fixed; }
+    .navigation-pane::-webkit-scrollbar {
+      width: 0%;
+      background: transparent; }
+    .navigation-pane hr {
+      margin-bottom: 0%; }
+    .navigation-pane .nav-title {
+      color: #ddd;
+      text-shadow: 0 0 1px #fff; }
+    .navigation-pane ul {
+      margin-left: -13%;
+      list-style: none; }
+      .navigation-pane ul li {
+        width: 100%;
+        border-bottom: 1px solid #191919;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        transition: all .2s; }
+        .navigation-pane ul li a {
+          font-size: 1.2rem;
+          color: #777;
+          text-shadow: 0 0 1px #666;
+          display: block;
+          height: 100%;
+          width: 100%; }
+        .navigation-pane ul li:hover {
+          background-color: black;
+          box-shadow: 3px 3px 5px black;
+          transform: scale(1.3); }
+          .navigation-pane ul li:hover a {
+            color: #fff;
+            text-decoration: none; }
+        .navigation-pane ul li.li-active {
+          background-color: black;
+          box-shadow: 3px 3px 5px black;
+          transform: scale(1.01); }
+  .content-area {
+    margin-right: 0;
+    padding-top: 1vh;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    padding-bottom: 1vh;
+    float: right;
+    width: 75vw;
+    background-color: #121212; }
+    .content-area .user-div {
+      width: 75%;
+      margin: auto auto; } }
